@@ -1,11 +1,12 @@
 import React from "react";
 import SubtopicItem from "../components/SubtopicItem";
+import CodeInput from "../components/CodeInput";
 
 function TopicPage({courses, isShowing,setIsShowing,currentTopicIndex,setCurrentTopicIndex}) {
 
     const list = courses[currentTopicIndex].tutorials.map(
         tutorial => {
-            return <SubtopicItem header={tutorial.name} text={tutorial.description}/>
+            return <SubtopicItem header={tutorial.name} text={tutorial.description} syntax={tutorial.syntax}/>
         }
     )
 
@@ -57,6 +58,13 @@ function TopicPage({courses, isShowing,setIsShowing,currentTopicIndex,setCurrent
 
                     {courses[currentTopicIndex].description}
                 </p>
+
+                {
+                    courses[currentTopicIndex].syntax &&
+
+                    <CodeInput syntax={courses[currentTopicIndex].syntax}/>
+
+                }
                 {list}
             </div>
         </div>

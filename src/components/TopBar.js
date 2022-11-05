@@ -8,10 +8,10 @@ function TopBar({currentPath, setIsShowing, isShowing}) {
     return (
         <div className={`ui inverted vertical center aligned segment ${currentPath==="/" ? "masthead" : ""}`}>
             <div className="ui inverted container secondary menu">
-                <Link className={`item ${currentPath === "/" ? "teal active" : ""}`} to="/">
+                <Link className={`item teal ${currentPath === "/" ? "active" : ""}`} to="/">
                     Home
                 </Link>
-                <Link className={`item ${currentPath === "/tutorials" ? "teal active" : ""}`} to="/tutorials">
+                <Link className={`item teal ${currentPath === "/tutorials" ? "active" : ""}`} to="/tutorials">
                     Tutorials
                 </Link>
                 {
@@ -27,9 +27,9 @@ function TopBar({currentPath, setIsShowing, isShowing}) {
                         Menu
                     </div>
                 }
-                <div className="right item">
+                <div className="right teal item">
                     <Link to="/login">
-                        <button className="ui teal inverted large button">
+                        <button className="ui inverted large button">
                             Log in
 
                         </button>

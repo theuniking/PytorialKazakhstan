@@ -25,10 +25,10 @@ function HomePage() {
                         </div>
                         <div className="statistic">
                                 <div className="value">
-                                        <i className="plane icon"></i> 5
+                                        <i className="python icon"></i> 5
                                 </div>
                                 <div className="label">
-                                        Flights
+                                        Icons
                                 </div>
                         </div>
                         <div className="statistic">

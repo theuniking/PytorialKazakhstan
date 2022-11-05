@@ -3,6 +3,24 @@
 * {
 
     font-size: 16px;
+
+}
+
+.ui.inverted.secondary.menu .teal.active {
+        background-color: #008080 !important;
+}
+
+.codebox {
+    /* Below are styles for the codebox (not the code itself) */
+    border:1px solid #5F977F;
+    background-color:#F1FBF7;
+    width:100%;
+    overflow:auto;
+    padding:10px;
+
+}
+.codebox code {
+    font-size:0.9em;
 }
 
 *:not(i) {

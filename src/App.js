@@ -13,15 +13,27 @@ import RegisterPage from "./pages/RegisterPage";
 const courses = [
     {
         topic: "Variables",
-        description: "Python is completely object oriented, and not \"statically typed\". You do not need to declare variables before using them, or declare their type. Every variable in Python is an object. This tutorial will go over a few basic types of variables.",
+        description: "Python is completely object oriented\\n, and not \"statically typed\". You do not need to declare variables before using them, or declare their type. Every variable in Python is an object. This tutorial will go over a few basic types of variables.",
+        syntax: {
+            explanation: "апостроф (‘) немесе тырнақша (“) ретінде кез-келген таңбалар жолы ретінде жазылады. ",
+            code:"print(\"lmaooo\")\\nok\\nlmaoo"
+        },
         tutorials: [
             {
                 name: "Numbers",
-                description: "Description numbers"
+                description: "Description numbers",
+                syntax: {
+                    explanation: "апостроф (‘) немесе тырнақша (“) ретінде кез-келген таңбалар жолы ретінде жазылады. ",
+                    code:"print(\"lmaooo\")\\nok\\nlmaoo"
+                },
             },
             {
                 name: "Strings",
-                description: "Description string"
+                description: "Description string",
+                syntax: {
+                    explanation: "апостроф (‘) немесе тырнақша (“) ретінде кез-келген таңбалар жолы ретінде жазылады. ",
+                    code:"print(\"lmaooo\")\\nok\\nlmaoo"
+                },
             },
             {
                 name: "Double",
@@ -39,7 +51,11 @@ const courses = [
             },
             {
                 name: "Using Operators with Strings",
-                description: "Description stuff"
+                description: "Description stuff",
+                syntax: {
+                    explanation: "апостроф (‘) немесе тырнақша (“) ретінде кез-келген таңбалар жолы ретінде жазылады. ",
+                    code:"print(\"lmaooo\")\\nok\\nlmaoo"
+                },
             }
         ]
     },
@@ -67,7 +83,11 @@ const courses = [
             },
             {
                 name: "Strings",
-                description: "Description string"
+                description: "Description string",
+                syntax: {
+                    explanation: "апостроф (‘) немесе тырнақша (“) ретінде кез-келген таңбалар жолы ретінде жазылады. ",
+                    code:"print(\"lmaooo\")\\nok\\nlmaoo"
+                },
             },
             {
                 name: "Double",
@@ -99,7 +119,11 @@ const courses = [
             },
             {
                 name: "Accessing Object Functions",
-                description: "Description stuff"
+                description: "Description stuff",
+                syntax: {
+                    explanation: "апостроф (‘) немесе тырнақша (“) ретінде кез-келген таңбалар жолы ретінде жазылады. ",
+                    code:"print(\"lmaooo\")\\nok\\nlmaoo"
+                },
             }
         ]
     },
@@ -159,7 +183,7 @@ function App() {
 
 
     return (
-        <div className="pusher">
+        <div>
 
             {
                 location.pathname !== "/login" && location.pathname !== "/register" &&
@@ -173,7 +197,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="/login" element={<LoginPage/>}/>
-                <Route path="/login" element={<RegisterPage/>}/>
+                <Route path="/register" element={<RegisterPage/>}/>
                 <Route path="/tutorials"
                        element={<TutorialsPage courses={courses} setCurrentTopicIndex={setCurrentTopicIndex}/>}/>
                 <Route path="/topic" element={<TopicPage courses={courses} currentTopicIndex={currentTopicIndex}
@@ -181,7 +205,6 @@ function App() {
                                                          isShowing={isShowing} setIsShowing={setIsShowing}/>}/>
                 <Route path="*" element={<NotfoundPage/>}/>
             </Routes>
-            <div className="ui hidden divider"></div>
 
         </div>
     )
