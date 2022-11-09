@@ -6,7 +6,7 @@ function SubtopicItem({header,text,syntax}) {
 
 
     return (
-        <div className="ui raised segment">
+        <div className="ui segment">
 
             <h3 className="ui teal header">
                 {header}
