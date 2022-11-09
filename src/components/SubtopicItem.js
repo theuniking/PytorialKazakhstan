@@ -2,6 +2,13 @@ import React from "react";
 import CodeInput from "./CodeInput";
 
 function SubtopicItem({header,text,syntax}) {
+
+    const list = text.split("\\n").map(
+        item => {
+            return <p>{item}</p>
+        }
+    )
+
     return (
         <div>
             <div className="ui hidden divider"></div>
@@ -9,7 +16,7 @@ function SubtopicItem({header,text,syntax}) {
             <h3 className="ui dividing header">
                 {header}
                 </h3>
-                    <p>{text}</p>
+            {list}
             {
                 syntax &&
                 <CodeInput syntax={syntax}/>

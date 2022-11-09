@@ -9,10 +9,10 @@ function TopBar({currentPath, setIsShowing, isShowing}) {
         <div className={`ui inverted vertical center aligned segment ${currentPath==="/" ? "masthead" : ""}`}>
             <div className="ui inverted container secondary menu">
                 <Link className={`item teal ${currentPath === "/" ? "active" : ""}`} to="/">
-                    Home
+                    Үй
                 </Link>
                 <Link className={`item teal ${currentPath === "/tutorials" ? "active" : ""}`} to="/tutorials">
-                    Tutorials
+                    Туториалдар
                 </Link>
                 {
                     currentPath === "/topic" &&
@@ -24,13 +24,13 @@ function TopBar({currentPath, setIsShowing, isShowing}) {
                             isShowing === false &&
                             <i className="bars icon"></i>
                         }
-                        Menu
+                        Мәзір
                     </div>
                 }
                 <div className="right teal item">
                     <Link to="/login">
                         <button className="ui inverted large button">
-                            Log in
+                            Кіру
 
                         </button>
                     </Link>

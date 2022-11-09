@@ -1,5 +1,4 @@
 import React from "react";
-import LogIn from "../components/LogIn";
 import {Link} from "react-router-dom";
 
 function LoginPage(){
@@ -16,27 +15,27 @@ function LoginPage(){
                                 <form className="ui form">
                                     <h1 className="ui center aligned teal icon header">
                                         <i className="user circle icon"></i>
-                                        Sign in
+                                        Кіру
                                         <div className="ui hidden divider"/>
                                     </h1>
                                     <div className="field">
-                                        <input type="text" name="login" placeholder="Login"/>
+                                        <input type="text" name="login" placeholder="Электрондық пошта"/>
                                     </div>
                                     <div className="field">
-                                        <input type="password" name="password" placeholder="Password"/>
+                                        <input type="password" name="password" placeholder="Құпиясөз"/>
                                     </div>
-                                    <a>Forgot password?</a>
+                                    <a>Құпиясөз есіңізде емес пе?</a>
                                     <div className="ui hidden divider"/>
-                                    <button className="ui large fluid teal button">Sign in</button>
+                                    <button className="ui large fluid teal button">Кіру</button>
                                 </form>
                             </div>
                             <div className="eight wide teal column" style={{padding:"250px 40px"}}>
-                                <h1 className="ui inverted header">New here?</h1>
-                                <p>Аккаунтыңыз болмаса жазылыңыз</p>
+                                <h1 className="ui inverted header">Мұнда жаңадан?</h1>
+                                <p>Аккаунтыңыз болмаса тіркеліңіз!</p>
                                 <Link to="/register">
 
                                     <button className="ui inverted large button">
-                                        SIGN UP
+                                        Тіркелу
                                     </button>
                                 </Link>
                             </div>

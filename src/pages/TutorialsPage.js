@@ -20,7 +20,7 @@ function TutorialsPage({courses,setCurrentTopicIndex}){
     )
     return (
         <div className="ui container">
-            <h1 className="ui header">All courses</h1>
+            <h1 className="ui header">Барлық курстар</h1>
             <div className="ui link special three cards">
                 {list}
             </div>

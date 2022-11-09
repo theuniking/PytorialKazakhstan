@@ -27,7 +27,7 @@ function TopicPage({courses, isShowing,setIsShowing,currentTopicIndex,setCurrent
                         setIsShowing(false)
 
                     }}>
-                        Close
+                        Жабу
                         <i className="angle left icon"></i>
                     </div>
                     {menu}
@@ -38,7 +38,7 @@ function TopicPage({courses, isShowing,setIsShowing,currentTopicIndex,setCurrent
                 {
                     currentTopicIndex > 0 &&
                     <div className="ui vertical animated teal left floated large button" tabIndex="0" onClick={(e) => setCurrentTopicIndex(currentTopicIndex - 1)}>
-                        <div className="visible content">Previous</div>
+                        <div className="visible content">Артқа</div>
                         <div className="hidden content">
                             <i className="left arrow icon"></i>
                         </div>
@@ -47,7 +47,7 @@ function TopicPage({courses, isShowing,setIsShowing,currentTopicIndex,setCurrent
                 {
                     currentTopicIndex < courses.length - 1 &&
                     <div className="ui vertical animated teal right floated large button" tabIndex="0" onClick={(e) => setCurrentTopicIndex(currentTopicIndex + 1)}>
-                        <div className="visible content">Next</div>
+                        <div className="visible content">Алдыға</div>
                         <div className="hidden content">
                             <i className="right arrow icon"></i>
                         </div>

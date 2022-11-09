@@ -1,5 +1,4 @@
 import React from "react";
-import LogIn from "../components/LogIn";
 import {Link} from "react-router-dom";
 
 function RegisterPage(){
@@ -14,26 +13,26 @@ function RegisterPage(){
                                 <form className="ui form">
                                     <h1 className="ui center aligned teal icon header">
                                         <i className="user circle icon"></i>
-                                        Sign UP
+                                        Тіркелу
                                         <div className="ui hidden divider"/>
                                     </h1>
                                     <div className="two fields">
                                         <div className="field">
-                                            <input type="text" name="first-name" placeholder="First Name"/>
+                                            <input type="text" name="first-name" placeholder="Аты"/>
                                         </div>
                                         <div className="field">
-                                            <input type="text" name="last-name" placeholder="Last Name"/>
+                                            <input type="text" name="last-name" placeholder="Тегі"/>
                                         </div>
                                     </div>
                                     <div className="field">
-                                        <input type="text" name="login" placeholder="Login"/>
+                                        <input type="text" name="login" placeholder="Электрондық пошта"/>
                                     </div>
                                     <div className="field">
-                                        <input type="password" name="password" placeholder="Password"/>
+                                        <input type="password" name="password" placeholder="Құпиясөз"/>
                                     </div>
-                                    <Link to="/login">Don't have and account?</Link>
+                                    <Link to="/login">Аккаунтыңыз бар ма?</Link>
                                     <div className="ui hidden divider"/>
-                                    <button className="ui large fluid teal button">Sign Up</button>
+                                    <button className="ui large fluid teal button">Тіркелу</button>
                                 </form>
 
 

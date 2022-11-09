@@ -31,8 +31,8 @@ function ListElements({course,index,setCurrentTopicIndex}){
                 </ol>
             </div>
             <div className="ui extra content">
-                <i className="save outline icon"></i>
-                Mark as last
+
+                Пайтон қазақша туториалдары
             </div>
 
 

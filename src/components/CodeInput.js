@@ -14,7 +14,7 @@ function CodeInput({syntax}) {
             <div>
                 {syntax.explanation}
                 <br/>
-                <div className="ui message">
+                <div className="ui teal message">
 
                     <div className="ui ordered list">
                         {list}
