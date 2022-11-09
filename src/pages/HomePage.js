@@ -14,12 +14,11 @@ function HomePage() {
                 <div className="ui three statistics">
 
                         <div className="statistic">
-                                <div className="text value">
-                                        Three<br/>
-                                        Thousand
+                                <div className="value">
+                                        <i className="python icon"></i> 5
                                 </div>
                                 <div className="label">
-                                        Signups
+                                        Icons
                                 </div>
                         </div>
                         <div className="statistic">
@@ -32,11 +31,10 @@ function HomePage() {
                         </div>
                         <div className="statistic">
                                 <div className="value">
-                                        <img src={logo} className="ui circular inline image"/>
-                                                42
+                                        <i className="python icon"></i> 5
                                 </div>
                                 <div className="label">
-                                        Team Members
+                                        Icons
                                 </div>
                         </div>
                 </div>
