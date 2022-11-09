@@ -12,11 +12,15 @@ function CodeInput({syntax}) {
 
     return (
             <div>
-                {syntax.explanation}
                 <br/>
-                <div className="ui teal message">
+                <span style={{fontStyle:"italic"}}>
 
-                    <div className="ui ordered list">
+                {syntax.explanation}
+                </span>
+                <br/>
+                <div className="ui black inverted segment">
+
+                    <div className="ui inverted ordered list" >
                         {list}
                     </div>
                 </div>

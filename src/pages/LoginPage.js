@@ -26,7 +26,7 @@ function LoginPage(){
                                     </div>
                                     <a>Құпиясөз есіңізде емес пе?</a>
                                     <div className="ui hidden divider"/>
-                                    <button className="ui large fluid teal button">Кіру</button>
+                                    <button className="ui medium fluid teal button">Кіру</button>
                                 </form>
                             </div>
                             <div className="eight wide teal column" style={{padding:"250px 40px"}}>

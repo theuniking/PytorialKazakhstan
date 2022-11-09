@@ -1,22 +1,17 @@
 import React from "react";
 import CodeInput from "./CodeInput";
+import NewLine from "./NewLine";
 
 function SubtopicItem({header,text,syntax}) {
 
-    const list = text.split("\\n").map(
-        item => {
-            return <p>{item}</p>
-        }
-    )
 
     return (
-        <div>
-            <div className="ui hidden divider"></div>
+        <div className="ui raised segment">
 
-            <h3 className="ui dividing header">
+            <h3 className="ui teal header">
                 {header}
                 </h3>
-            {list}
+            <NewLine p={text}/>
             {
                 syntax &&
                 <CodeInput syntax={syntax}/>

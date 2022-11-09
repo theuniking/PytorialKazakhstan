@@ -10,7 +10,7 @@ function HomePage() {
     return (
         <div className="ui center aligned container">
 
-                <div style={{marginTop: "200px"}}></div>
+                <div style={{height:"10vh"}}></div>
 
                 <div className="ui three statistics">
 

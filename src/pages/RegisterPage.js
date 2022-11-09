@@ -32,7 +32,7 @@ function RegisterPage(){
                                     </div>
                                     <Link to="/login">Аккаунтыңыз бар ма?</Link>
                                     <div className="ui hidden divider"/>
-                                    <button className="ui large fluid teal button">Тіркелу</button>
+                                    <button className="ui medium fluid teal button">Тіркелу</button>
                                 </form>
 
 

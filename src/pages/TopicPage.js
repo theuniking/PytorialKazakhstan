@@ -1,6 +1,7 @@
 import React from "react";
 import SubtopicItem from "../components/SubtopicItem";
 import CodeInput from "../components/CodeInput";
+import NewLine from "../components/NewLine";
 
 function TopicPage({courses, isShowing,setIsShowing,currentTopicIndex,setCurrentTopicIndex}) {
 
@@ -54,10 +55,8 @@ function TopicPage({courses, isShowing,setIsShowing,currentTopicIndex,setCurrent
                     </div>
                 }
                 <h1 className="ui center aligned teal header">{courses[currentTopicIndex].topic}</h1>
-                <p>
 
-                    {courses[currentTopicIndex].description}
-                </p>
+                    <NewLine p={courses[currentTopicIndex].description}/>
 
                 {
                     courses[currentTopicIndex].syntax &&
@@ -66,6 +65,7 @@ function TopicPage({courses, isShowing,setIsShowing,currentTopicIndex,setCurrent
 
                 }
                 {list}
+                <div style={{height:"10vh"}}/>
             </div>
         </div>
     )

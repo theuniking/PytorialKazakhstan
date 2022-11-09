@@ -29,7 +29,7 @@ function TopBar({currentPath, setIsShowing, isShowing}) {
                 }
                 <div className="right teal item">
                     <Link to="/login">
-                        <button className="ui inverted large button">
+                        <button className="ui inverted button">
                             Кіру
 
                         </button>

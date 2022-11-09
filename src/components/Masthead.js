@@ -13,7 +13,7 @@ function Masthead() {
             <div className="ui hidden divider"/>
             <Link to="/tutorials">
 
-                <div className="ui huge  inverted button">Туториалдарға бару<i className="right caret icon"></i></div>
+                <div className="ui large inverted button">Туториалдарға бару<i className="right caret icon"></i></div>
             </Link>
         </div>
     )
