@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import "../index.css"
-import logo from '../components/pictures/python.jpg';
 
 function HomePage() {
 
