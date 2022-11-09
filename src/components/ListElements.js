@@ -19,7 +19,7 @@ function ListElements({course,index,setCurrentTopicIndex}){
         <Link className="ui teal card" onClick={() => setCurrentTopicIndex(index)} to="/topic">
 
 
-            <div className="image">
+            <div className="image" alt="logo">
                 <img src={logo}/>
             </div>
             <div className="content">

@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import TutorialsPage from "./pages/TutorialsPage";
 import HomePage from "./pages/HomePage";
-import {BrowserRouter, Link, Route, Routes, useLocation} from "react-router-dom";
+import {Route, Routes, useLocation} from "react-router-dom";
 import NotfoundPage from "./pages/NotfoundPage";
 import LoginPage from "./pages/LoginPage";
 import TopicPage from "./pages/TopicPage";

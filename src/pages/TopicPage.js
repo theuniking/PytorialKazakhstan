@@ -13,7 +13,7 @@ function TopicPage({courses, isShowing,setIsShowing,currentTopicIndex,setCurrent
 
     const menu = courses.map(
         (course,index) => {
-            return <a className={`item teal ${currentTopicIndex === index ? "active" : ""}`} onClick={(e) => setCurrentTopicIndex(index)}>{course.topic}</a>
+            return <div className={`item teal ${currentTopicIndex === index ? "active" : ""}`} onClick={(e) => setCurrentTopicIndex(index)}>{course.topic}</div>
         }
     )
 
@@ -38,7 +38,7 @@ function TopicPage({courses, isShowing,setIsShowing,currentTopicIndex,setCurrent
 
                 {
                     currentTopicIndex > 0 &&
-                    <div className="ui vertical animated teal left floated large button" tabIndex="0" onClick={(e) => setCurrentTopicIndex(currentTopicIndex - 1)}>
+                    <div className="ui vertical animated teal left floated button" tabIndex="0" onClick={(e) => setCurrentTopicIndex(currentTopicIndex - 1)}>
                         <div className="visible content">Артқа</div>
                         <div className="hidden content">
                             <i className="left arrow icon"></i>
@@ -47,7 +47,7 @@ function TopicPage({courses, isShowing,setIsShowing,currentTopicIndex,setCurrent
                 }
                 {
                     currentTopicIndex < courses.length - 1 &&
-                    <div className="ui vertical animated teal right floated large button" tabIndex="0" onClick={(e) => setCurrentTopicIndex(currentTopicIndex + 1)}>
+                    <div className="ui vertical animated teal right floated button" tabIndex="0" onClick={(e) => setCurrentTopicIndex(currentTopicIndex + 1)}>
                         <div className="visible content">Алдыға</div>
                         <div className="hidden content">
                             <i className="right arrow icon"></i>

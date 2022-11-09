@@ -24,7 +24,7 @@ function LoginPage(){
                                     <div className="field">
                                         <input type="password" name="password" placeholder="Құпиясөз"/>
                                     </div>
-                                    <a>Құпиясөз есіңізде емес пе?</a>
+                                    <span>Құпиясөз есіңізде емес пе?</span>
                                     <div className="ui hidden divider"/>
                                     <button className="ui medium fluid teal button">Кіру</button>
                                 </form>
