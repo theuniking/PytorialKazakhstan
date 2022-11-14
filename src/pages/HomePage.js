@@ -6,7 +6,7 @@ function HomePage() {
 
 
     return (
-        <div className="ui center aligned container" style={{paddingBottom:"10vh"}}>
+        <div className="ui center aligned container" style={{paddingTop:"10vh",paddingBottom:"10vh"}}>
 
 
 
@@ -48,7 +48,7 @@ function HomePage() {
 
 
 
-            <div className="ui three column center aligned divided relaxed stackable grid container" style={{margin:"120px"}}>
+            <div className="ui three column center aligned divided relaxed stackable grid container" style={{margin:"15vh"}}>
                 <div className="row">
                     <div className="column">
                         <h2 className="ui icon header">
