@@ -1,4 +1,5 @@
 import React from "react";
+import NewLine from "./NewLine";
 
 function CodeInput({syntax}) {
 
@@ -13,11 +14,10 @@ function CodeInput({syntax}) {
     return (
             <div>
                 <br/>
-                <span style={{fontStyle:"italic"}}>
+                <em>
+                    <NewLine p={syntax.explanation}/>
 
-                {syntax.explanation}
-                </span>
-                <br/>
+                </em>
                 <div className="ui black inverted segment">
 
                     <div className="ui inverted ordered list" >

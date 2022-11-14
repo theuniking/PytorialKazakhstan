@@ -8,7 +8,7 @@ function SubtopicItem({header,text,syntax}) {
     return (
         <div className="ui segment">
 
-            <h3 className="ui teal header">
+            <h3 className="ui teal centered header">
                 {header}
                 </h3>
             <NewLine p={text}/>

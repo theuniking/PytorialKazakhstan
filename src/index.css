@@ -10,12 +10,16 @@
         background-color: #008080 !important;
 }
 
+.tab {
+
+    text-indent: 30px;
+}
 
 *:not(i) {
 
     font-family: 'Ubuntu', "Open Sans" !important;
 }
 .masthead {
-    height: 65vh;
+    height: 55vh;
 }
 

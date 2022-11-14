@@ -54,7 +54,7 @@ function TopicPage({courses, isShowing,setIsShowing,currentTopicIndex,setCurrent
                         </div>
                     </div>
                 }
-                <h1 className="ui center aligned teal header">{courses[currentTopicIndex].topic}</h1>
+                <h1 className="ui center aligned teal header" style={{margin:"30px"}}>{courses[currentTopicIndex].topic}</h1>
 
                     <NewLine p={courses[currentTopicIndex].description}/>
 
